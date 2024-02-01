@@ -6,6 +6,11 @@ from colored import Fore, Back, Style
 aai.settings.api_key = Constants.ASS_AI_API_KEY
 transcriber = aai.Transcriber()
 
+# YouTube URLs
+polyglot12 = 'https://www.youtube.com/watch?v=Nfu30AbwNMA'
+polyglotItaliano = 'https://www.youtube.com/watch?v=9gUaWgktKQ0'
+meetTheMan = 'https://www.youtube.com/watch?v=Qac_X0J-L6I'
+
 # remember to fuck around with utterances maybe
 
 # text colors picked by language supported

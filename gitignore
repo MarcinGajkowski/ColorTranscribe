@@ -161,7 +161,9 @@ cython_debug/
 
 # my own files
 Constants.py
+ColorTransSamples/
 
 # file formats (they get too big sometimes)
 *.mp4
 *.m4a
+*.wav
