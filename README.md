@@ -8,7 +8,7 @@ to see all three transcription methods and how they barely work how they're supp
 each method can be called separately by replacing Transcribe3in1.py with a given counterpart
 (TranscribeGoogleCloud.py, TranscribeAssembly.py, TranscribeWhisper.py)
 
-AI Models used for this project:
+# AI Models used for this project:
 
 AssemblyAI - https://github.com/AssemblyAI/cookbook
 
@@ -16,8 +16,7 @@ Google Cloud Speech-To-Text API - https://cloud.google.com/speech-to-text
 
 Whisper by OpenAI - https://huggingface.co/openai/whisper-large-v3
 
-
-other Python AI projects I might have taken inspiration from:
+# other Python AI projects I might have taken inspiration from:
 
 custom language detection in Whisper - https://discuss.huggingface.co/t/language-detection-with-whisper/26003/2
 
