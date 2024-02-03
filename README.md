@@ -17,7 +17,9 @@ Google Cloud Speech-To-Text API - https://cloud.google.com/speech-to-text
 Whisper by OpenAI - https://huggingface.co/openai/whisper-large-v3
 
 other Python AI projects I might have taken inspiration from:
+
 custom language detection in Whisper - https://discuss.huggingface.co/t/language-detection-with-whisper/26003/2
+
 language detection in Google Cloud STT - https://cloud.google.com/speech-to-text/docs/enable-language-recognition-speech-to-text#speech_transcribe_multilanguage_beta-python
 
 all written with the help of the PyCharm IDE by Jetbrains
