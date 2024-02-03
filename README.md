@@ -2,7 +2,7 @@
 a python script for transcribing audio files using dedicated AI Models
 and then changing the color of the transcribed text based on the language spoken
 
-type python .\Transcribe3in1.py (after downloading the whole project) into your CMD
+type python .\Transcribe3in1.py (after downloading the whole project) into your CMD after travelling to this project's folder
 to see all three transcription methods and how they barely work how they're supposed to :P
 
 each method can be called separately by replacing Transcribe3in1.py with a given counterpart
