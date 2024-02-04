@@ -1,30 +1,26 @@
-import assemblyai as aai
 import Constants
-from colored import Fore, Back, Style
+from TranscribeAssembly import lang_handler, transcribe
+from TranscribeGoogleCloud import color_transcribe_file_with_multilanguage_gcs
+from TranscribeWhisper import lang_whandler, pipe, transcribe_and_detect
 
-# my EPIC API key and Transcriber setup
-aai.settings.api_key = Constants.ASS_AI_API_KEY
-transcriber = aai.Transcriber()
+# sample .flac files from Google Cloud
+flac1 = Constants.GOOG_URI1
+flac2 = Constants.GOOG_URI2
+flac3 = Constants.GOOG_URI3
 
-# YouTube URLs
-polyglot12 = 'https://www.youtube.com/watch?v=Nfu30AbwNMA'
-polyglotItaliano = 'https://www.youtube.com/watch?v=9gUaWgktKQ0'
-meetTheMan = 'https://www.youtube.com/watch?v=Qac_X0J-L6I'
+# sample file paths
+wav1 = Constants.SAMPLE_URL1
+wav2 = Constants.SAMPLE_URL2
+wav3 = Constants.SAMPLE_URL3
 
-# remember to fuck around with utterances maybe
+lang_handler(transcribe(wav1))
+color_transcribe_file_with_multilanguage_gcs(flac1)
+lang_whandler(pipe(wav1))
 
-# text colors picked by language supported
+# lang_handler(transcribe(wav2))
+# color_transcribe_file_with_multilanguage_gcs(flac2)
+# lang_whandler(pipe(wav2))
 
-
-# example of proper 'colored' usage
-print(f'{Fore.white}{Back.green}Colored is Awesome!!!{Style.reset}')
-
-# sample file path
-SAMPLE_URL = './ColorTransSamples/polyglotSample.wav'
-
-# the most basic transcribing method from AssemblyAI
-transcript = transcriber.transcribe(SAMPLE_URL)
-if transcript.error:
-    print(transcript.error)
-
-print(transcript.text)
+# lang_handler(transcribe(wav3))
+# color_transcribe_file_with_multilanguage_gcs(flac3)
+# lang_whandler(pipe(wav3))
