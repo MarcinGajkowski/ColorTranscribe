@@ -22,6 +22,6 @@ custom language detection in Whisper - https://discuss.huggingface.co/t/language
 
 language detection in Google Cloud STT - https://cloud.google.com/speech-to-text/docs/enable-language-recognition-speech-to-text#speech_transcribe_multilanguage_beta-python
 
-all written with the help of the PyCharm IDE by Jetbrains
+all written with the help of the PyCharm IDE by Jetbrains.
 
-subtitle text files taken with the use of https://downsub.com/
+subtitle text files taken with the use of https://downsub.com/ .
