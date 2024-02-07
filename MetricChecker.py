@@ -4,7 +4,7 @@ import MetricsStorage as metrics
 def calculate_metrics_rawlings(script: str):
     # initialize Word Error Rate-checking variables
     words_to_check = []
-    words_correct = 0
+    words_incorrect = 0
     sentences = script.split(". ")
     for sentence in sentences:
         sentence.split()
@@ -22,9 +22,9 @@ def calculate_metrics_rawlings(script: str):
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
-        if words_to_check[i] == true_words[i]:
-            words_correct += 1
-    word_error_rate = words_correct / len(true_words)
+        if words_to_check[i] != true_words[i]:
+            words_incorrect += 1
+    word_error_rate = words_incorrect / len(true_words)
 
     # check if given sentences are 100% correct
     sent_correct = 0
@@ -52,7 +52,7 @@ def calculate_metrics_rawlings(script: str):
 def calculate_metrics_italiano(script: str):
     # initialize Word Error Rate-checking variables
     words_to_check = []
-    words_correct = 0
+    words_incorrect = 0
     sentences = script.split(". ")
     for sentence in sentences:
         sentence.split()
@@ -70,9 +70,9 @@ def calculate_metrics_italiano(script: str):
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
-        if words_to_check[i] == true_words[i]:
-            words_correct += 1
-    word_error_rate = words_correct / len(true_words)
+        if words_to_check[i] != true_words[i]:
+            words_incorrect += 1
+    word_error_rate = words_incorrect / len(true_words)
 
     # check if given sentences are 100% correct
     sent_correct = 0
@@ -100,7 +100,7 @@ def calculate_metrics_italiano(script: str):
 def calculate_metrics_scott_en(script: str):
     # initialize Word Error Rate-checking variables
     words_to_check = []
-    words_correct = 0
+    words_incorrect = 0
     sentences = script.split(". ")
     for sentence in sentences:
         sentence.split()
@@ -118,9 +118,9 @@ def calculate_metrics_scott_en(script: str):
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
-        if words_to_check[i] == true_words[i]:
-            words_correct += 1
-    word_error_rate = words_correct / len(true_words)
+        if words_to_check[i] != true_words[i]:
+            words_incorrect += 1
+    word_error_rate = words_incorrect / len(true_words)
 
     # check if given sentences are 100% correct
     sent_correct = 0
@@ -148,7 +148,7 @@ def calculate_metrics_scott_en(script: str):
 def calculate_metrics_scott_fr(script: str):
     # initialize Word Error Rate-checking variables
     words_to_check = []
-    words_correct = 0
+    words_incorrect = 0
     sentences = script.split(". ")
     for sentence in sentences:
         sentence.split()
@@ -166,9 +166,9 @@ def calculate_metrics_scott_fr(script: str):
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
-        if words_to_check[i] == true_words[i]:
-            words_correct += 1
-    word_error_rate = words_correct / len(true_words)
+        if words_to_check[i] != true_words[i]:
+            words_incorrect += 1
+    word_error_rate = words_incorrect / len(true_words)
 
     # check if given sentences are 100% correct
     sent_correct = 0
@@ -196,7 +196,7 @@ def calculate_metrics_scott_fr(script: str):
 def calculate_metrics_scott_pt(script: str):
     # initialize Word Error Rate-checking variables
     words_to_check = []
-    words_correct = 0
+    words_incorrect = 0
     sentences = script.split(". ")
     for sentence in sentences:
         sentence.split()
@@ -214,9 +214,9 @@ def calculate_metrics_scott_pt(script: str):
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
-        if words_to_check[i] == true_words[i]:
-            words_correct += 1
-    word_error_rate = words_correct / len(true_words)
+        if words_to_check[i] != true_words[i]:
+            words_incorrect += 1
+    word_error_rate = words_incorrect / len(true_words)
 
     # check if given sentences are 100% correct
     sent_correct = 0
