@@ -9,8 +9,9 @@ def color_transcribe_file_with_multilanguage_gcs(gcs_uri: str) -> str:
     # ! create Google client
     client = speechbeta.SpeechClient()
 
-    first_language = "es-ES"
-    alternate_languages = {"fr-FR", "nl-NL", "el-GR", "ru-RU", "it-IT", "de-DE", "af-ZA", "hu-HU", "en-GB", "iw-IL",
+    # list of detectable languages (based on the sample videos)
+    first_language = "en-GB"
+    alternate_languages = {"fr-FR", "nl-NL", "el-GR", "ru-RU", "it-IT", "de-DE", "af-ZA", "hu-HU", "es-ES", "iw-IL",
                            "en-US", "bg-BG", "ca-ES", "fa-IR", "pt-BR", "ro-RO", "sv-SE", "uk-UA", "no-NO", "sr-RS",
                            "ar-LB"}
 
@@ -22,6 +23,7 @@ def color_transcribe_file_with_multilanguage_gcs(gcs_uri: str) -> str:
         model="latest_long",
         language_code=first_language,
         alternative_language_codes=alternate_languages,
+        enable_automatic_punctuation=True,
     )
 
     # Set the remote path for the audio file
@@ -37,11 +39,9 @@ def color_transcribe_file_with_multilanguage_gcs(gcs_uri: str) -> str:
     for i, result in enumerate(response.results):
         lang = recognition_config.language_code
         alternative = result.alternatives[0]
-        transcript_builder.append("-" * 20)
-        transcript_builder.append(f"\nFirst alternative of result {i}: {alternative}")
         match lang:
             case 'en-GB':
-                color: str = f'{Fore.RED}{Back.BLUE}'
+                color: str = f'{Fore.WHITE}{Back.BLACK}'
                 transcript_builder.append(f"Transcript (British English): " + f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
@@ -156,4 +156,4 @@ def color_transcribe_file_with_multilanguage_gcs(gcs_uri: str) -> str:
     return transcript
 
 
-color_transcribe_file_with_multilanguage_gcs(Constants.GOOG_URI1)
+color_transcribe_file_with_multilanguage_gcs(Constants.GOOG_TOM1)
