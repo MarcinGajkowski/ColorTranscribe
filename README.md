@@ -14,7 +14,7 @@ AssemblyAI - https://github.com/AssemblyAI/cookbook
 
 Google Cloud Speech-To-Text API - https://cloud.google.com/speech-to-text
 
-Whisper by OpenAI - https://huggingface.co/openai/whisper-small
+Whisper by OpenAI - https://huggingface.co/openai/whisper-small; https://github.com/openai/whisper
 
 # other Python AI projects I might have taken inspiration from:
 
