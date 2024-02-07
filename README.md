@@ -24,6 +24,8 @@ language detection in Google Cloud STT - https://cloud.google.com/speech-to-text
 
 metric calculation method taken from this paper from the Lviv Polytechnic National University by Leslav Kobylyukh, Zoriana Rybchak and Oleh Basystiuk - https://ceur-ws.org/Vol-3396/paper18.pdf (it's really basic, but still wanna credit regardless)
 
+very slight inspiration from abhishekag03 for the conversion script - https://github.com/abhishekag03/mp3toflac/blob/master/mp3toflac.py
+
 all written with the help of the PyCharm IDE by Jetbrains.
 
 subtitle text files taken with the use of https://downsub.com/ .
