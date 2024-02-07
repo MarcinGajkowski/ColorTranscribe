@@ -51,7 +51,7 @@ def lang_handler(sample):
             print(f"Transcript (Italian): " + f'{color}{transcript.text}' + f'{Style.reset}')
     match lang:
         case 'pt':
-            color: str = f'{Fore.RED}{Back.DARK_GREEN}'
+            color: str = f'{Fore.DARK_BLUE}{Back.GREEN}'
             print(f"Transcript ((Brazilian) Portuguese): " + f'{color}{transcript.text}' + f'{Style.reset}')
     match lang:
         case 'nd':

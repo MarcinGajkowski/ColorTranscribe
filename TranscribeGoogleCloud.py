@@ -42,112 +42,112 @@ def color_transcribe_file_with_multilanguage_gcs(gcs_uri: str) -> str:
         match lang:
             case 'en-GB':
                 color: str = f'{Fore.WHITE}{Back.BLACK}'
-                transcript_builder.append(f"Transcript (British English): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'en-US':
                 color: str = f'{Fore.WHITE}{Back.BLACK}'
-                transcript_builder.append(f"Transcript (British English): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'el-GR':
                 color: str = f'{Fore.BLUE}{Back.WHITE}'
-                transcript_builder.append(f"Transcript (Greek): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'ru-RU':
                 color: str = f'{Fore.WHITE}{Back.BLUE}'
-                transcript_builder.append(f"Transcript (Russian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'bg-BG':
                 color: str = f'{Fore.WHITE}{Back.RED}'
-                transcript_builder.append(f"Transcript (Bulgarian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'fa-IR':
                 color: str = f'{Fore.GREEN}{Back.WHITE}'
-                transcript_builder.append(f"Transcript (Farsi/Persian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'af-ZA':
                 color: str = f'{Fore.GREEN}{Back.YELLOW}'
-                transcript_builder.append(f"Transcript (Afrikaans): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'hu-HU':
                 color: str = f'{Fore.RED}{Back.GREEN}'
-                transcript_builder.append(f"Transcript (Hungarian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'iw-IL':
                 color: str = f'{Fore.WHITE}{Back.LIGHT_BLUE}'
-                transcript_builder.append(f"Transcript (Hebrew): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'ro-RO':
                 color: str = f'{Fore.WHITE}{Back.YELLOW}'
-                transcript_builder.append(f"Transcript (Romanian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'sv-SE':
                 color: str = f'{Fore.YELLOW}{Back.BLUE}'
-                transcript_builder.append(f"Transcript (Swedish): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'uk-UA':
                 color: str = f'{Fore.BLUE}{Back.YELLOW}'
-                transcript_builder.append(f"Transcript (Ukrainian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'no-NO':
                 color: str = f'{Fore.RED}{Back.DARK_BLUE}'
-                transcript_builder.append(f"Transcript (Norwegian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'sr-RS':
                 color: str = f'{Fore.GOLD_1}{Back.RED}'
-                transcript_builder.append(f"Transcript (Serbian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'ar-LB':
                 color: str = f'{Fore.RED}{Back.WHITE}'
-                transcript_builder.append(f"Transcript (Arabic - Lebanon): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'es-ES':
                 color: str = f'{Fore.RED}{Back.YELLOW}'
-                transcript_builder.append(f"Transcript (Spanish): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'ca-ES':
                 color: str = f'{Fore.YELLOW}{Back.RED}'
-                transcript_builder.append(f"Transcript (Catalan): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'fr-FR':
                 color: str = f'{Fore.WHITE}{Back.DARK_BLUE}'
-                transcript_builder.append(f"Transcript (French): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'de-DE':
                 color: str = f'{Fore.YELLOW}{Back.BLACK}'
-                transcript_builder.append(f"Transcript (German): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'it-IT':
                 color: str = f'{Fore.WHITE}{Back.GREEN}'
-                transcript_builder.append(f"Transcript (Italian): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'pt-BR':
-                color: str = f'{Fore.BLUE}{Back.GREEN}'
-                transcript_builder.append(f"Transcript (Brazilian Portuguese): " + f'{color}{alternative.transcript}'
+                color: str = f'{Fore.DARK_BLUE}{Back.GREEN}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
         match lang:
             case 'nl-NL':
                 color: str = f'{Fore.WHITE}{Back.ORANGE_1}'
-                transcript_builder.append(f"Transcript (Dutch): " + f'{color}{alternative.transcript}'
+                transcript_builder.append(f'{color}{alternative.transcript}'
                                           + f'{Style.reset}')
 
     transcript = "".join(transcript_builder)
