@@ -1,5 +1,4 @@
 import os
-from subprocess import call
 from pydub import AudioSegment
 from TranscribeAssembly import lang_handler
 # from TranscribeGoogleCloud import color_transcribe_file_with_multilanguage_gcs
