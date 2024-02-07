@@ -16,6 +16,9 @@ def calculate_metrics_rawlings(script: str):
     if len(words_to_check) > len(true_words):
         for w in range(len(words_to_check) - len(true_words)):
             true_words.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_words) > len(words_to_check):
+        for j in range(len(true_words) - len(words_to_check)):
+            words_to_check.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
@@ -27,8 +30,11 @@ def calculate_metrics_rawlings(script: str):
     sent_correct = 0
     true_sentences = metrics.truth_rawlings
     if len(sentences) > len(true_sentences):
-        for j in range(len(sentences) - len(true_sentences) - 1):
+        for j in range(len(sentences) - len(true_sentences)):
             true_sentences.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_sentences) > len(sentences):
+        for j in range(len(true_sentences) - len(sentences)):
+            sentences.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(sentences))
     print(len(true_sentences))
     for i in range(len(true_sentences)):
@@ -58,6 +64,9 @@ def calculate_metrics_italiano(script: str):
     if len(words_to_check) > len(true_words):
         for w in range(len(words_to_check) - len(true_words)):
             true_words.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_words) > len(words_to_check):
+        for j in range(len(true_words) - len(words_to_check)):
+            words_to_check.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
@@ -69,8 +78,11 @@ def calculate_metrics_italiano(script: str):
     sent_correct = 0
     true_sentences = metrics.truth_italiano
     if len(sentences) > len(true_sentences):
-        for j in range(len(sentences) - len(true_sentences) - 1):
+        for j in range(len(sentences) - len(true_sentences)):
             true_sentences.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_sentences) > len(sentences):
+        for j in range(len(true_sentences) - len(sentences)):
+            sentences.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(sentences))
     print(len(true_sentences))
     for i in range(len(true_sentences)):
@@ -100,6 +112,9 @@ def calculate_metrics_scott_en(script: str):
     if len(words_to_check) > len(true_words):
         for w in range(len(words_to_check) - len(true_words)):
             true_words.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_words) > len(words_to_check):
+        for j in range(len(true_words) - len(words_to_check)):
+            words_to_check.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
@@ -111,8 +126,11 @@ def calculate_metrics_scott_en(script: str):
     sent_correct = 0
     true_sentences = metrics.truth_scott_en
     if len(sentences) > len(true_sentences):
-        for j in range(len(sentences) - len(true_sentences) - 1):
+        for j in range(len(sentences) - len(true_sentences)):
             true_sentences.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_sentences) > len(sentences):
+        for j in range(len(true_sentences) - len(sentences)):
+            sentences.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(sentences))
     print(len(true_sentences))
     for i in range(len(true_sentences)):
@@ -142,6 +160,9 @@ def calculate_metrics_scott_fr(script: str):
     if len(words_to_check) > len(true_words):
         for w in range(len(words_to_check) - len(true_words)):
             true_words.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_words) > len(words_to_check):
+        for j in range(len(true_words) - len(words_to_check)):
+            words_to_check.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
@@ -153,8 +174,11 @@ def calculate_metrics_scott_fr(script: str):
     sent_correct = 0
     true_sentences = metrics.truth_scott_fr
     if len(sentences) > len(true_sentences):
-        for j in range(len(sentences) - len(true_sentences) - 1):
+        for j in range(len(sentences) - len(true_sentences)):
             true_sentences.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_sentences) > len(sentences):
+        for j in range(len(true_sentences) - len(sentences)):
+            sentences.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(sentences))
     print(len(true_sentences))
     for i in range(len(true_sentences)):
@@ -184,6 +208,9 @@ def calculate_metrics_scott_pt(script: str):
     if len(words_to_check) > len(true_words):
         for w in range(len(words_to_check) - len(true_words)):
             true_words.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_words) > len(words_to_check):
+        for j in range(len(true_words) - len(words_to_check)):
+            words_to_check.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(words_to_check))
     print(len(true_words))
     for i in range(len(true_words)):
@@ -195,8 +222,11 @@ def calculate_metrics_scott_pt(script: str):
     sent_correct = 0
     true_sentences = metrics.truth_scott_pt
     if len(sentences) > len(true_sentences):
-        for j in range(len(sentences) - len(true_sentences) - 1):
+        for j in range(len(sentences) - len(true_sentences)):
             true_sentences.append('\n')  # very temporary fix, don't know to do it otherwise
+    if len(true_sentences) > len(sentences):
+        for j in range(len(true_sentences) - len(sentences)):
+            sentences.append('\n')  # very temporary fix, don't know to do it otherwise
     print(len(sentences))
     print(len(true_sentences))
     for i in range(len(true_sentences)):

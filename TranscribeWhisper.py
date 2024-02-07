@@ -118,5 +118,5 @@ def lang_whandler(sample):
     return result["text"]
 
 
-sample = Constants.FLAC_TOM3
-lang_whandler(sample)
+# sample = Constants.FLAC_TOM3
+# lang_whandler(sample)
