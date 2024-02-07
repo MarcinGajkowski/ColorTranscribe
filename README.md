@@ -3,10 +3,14 @@ a python script for transcribing audio files using dedicated AI Models
 and then changing the color of the transcribed text based on the language spoken
 
 type python .\Transcribe3in1.py (after downloading the whole project) into your CMD after travelling to this project's folder
-to see all three transcription methods and how they barely work how they're supposed to :P (as well as the metrics for every sample file ( for now ))
+to see all three transcription methods based on provided samples (they're kinda big, so maybe I'l add them later)
 
 each method can be called separately by replacing Transcribe3in1.py with a given counterpart
 (TranscribeGoogleCloud.py, TranscribeAssembly.py, TranscribeWhisper.py)
+(be sure to uncomment the functions at the bottom for them to work)
+
+OR you could try to put your own .mp3, .wav or .flac file 
+and get transcriptions for those with the .\TranscribeUserInput command
 
 # AI Models used for this project:
 
