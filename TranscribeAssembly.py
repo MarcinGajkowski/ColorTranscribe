@@ -31,7 +31,7 @@ def lang_handler(sample):
             print(f"Transcript (American English): " + f'{color}{transcript.text}' + f'{Style.reset}')
     match lang:
         case 'en_uk':
-            color: str = f'{Fore.WHITE}{Back.BLACK}'
+            color: str = f'{Fore.RED}{Back.DARK_BLUE}'
             print(f"Transcript (British English): " + f'{color}{transcript.text}' + f'{Style.reset}')
     match lang:
         case 'es':
@@ -101,5 +101,4 @@ def lang_handler(sample):
     return transcript.text
 
 
-# ts_sample.config.language_code = 'en_uk'
-lang_handler(Constants.SAMPLE_TOM3)
+# lang_handler(Constants.SAMPLE_TOM3)

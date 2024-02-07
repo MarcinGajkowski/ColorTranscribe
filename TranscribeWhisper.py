@@ -1,6 +1,4 @@
 import whisper
-# from WhisperLangDetection import detect_language_epicly
-import Constants
 from colored import Fore, Back, Style
 
 model = whisper.load_model("small")
